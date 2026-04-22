@@ -1,80 +1,70 @@
-# Weather App 🌦
+🌦 Weather App using Python & OpenWeather API
 
-A simple **Python Weather Web Application** that fetches real-time weather data using the **OpenWeatherMap API**.
+A simple Weather Web Application built using Python Flask and the OpenWeather API.
+Users can enter a city name and get real-time weather information such as temperature, weather condition, and humidity.
 
-The application allows users to enter a city name and view the current weather information such as temperature, humidity, and weather conditions.
+🚀 Live Demo
 
----
+🌐 Live Website:
+https://weather-app-python-openweather-api.onrender.com
 
-## 🚀 Features
+Deployed using Render
 
-* Get current weather by city name
-* Displays temperature, humidity, and weather description
-* Simple web interface built using Flask
-* Uses OpenWeatherMap API
-
----
-
-## 🛠 Technologies Used
-
-* Python
-* Flask
-* Requests Library
-* OpenWeatherMap API
-* HTML / CSS
-
----
-
-## 📂 Project Structure
-
-Weather-App
-
-app.py
-requirements.txt
-templates/
-    index.html
-README.md
-
----
-
-## ⚙ Installation
-
-Clone the repository
-
-git clone https://github.com/vishnu767592/Weather-App-Python-OpenWeather-Api.git
-
-Navigate to the project folder
-
-cd Weather-App-Python-OpenWeather-Api
-
-Install dependencies
-
+📌 Features
+🌍 Search weather by city name
+🌡 Display temperature
+☁ Show weather condition
+💧 Show humidity
+⚡ Fast and simple UI
+☁ Uses OpenWeatherMap API
+🌐 Deployed online
+🛠 Technologies Used
+Python
+Flask
+HTML
+CSS
+OpenWeather API
+Git & GitHub
+Render (Deployment)
+📂 Project Structure
+Weather-App-Python-OpenWeather-Api
+│
+├── app.py
+├── weather.py
+├── requirements.txt
+├── README.md
+│
+└── templates
+    └── index.html
+⚙ Installation (Run Locally)
+1️⃣ Clone the repository
+git clone https://github.com/vishnu767592/Weather-App-Python-OpenWeather-Api-.git
+2️⃣ Go to project folder
+cd Weather-App-Python-OpenWeather-Api-
+3️⃣ Install dependencies
 pip install -r requirements.txt
-
-Run the application
-
+4️⃣ Run the application
 python app.py
-
----
-
-## 🌐 Usage
-
-1. Open the browser
-2. Go to
-
+5️⃣ Open browser
 http://127.0.0.1:5000
+🔑 API Used
 
-3. Enter a city name to see the weather.
-
----
-
-## 📡 API Used
+Weather data is fetched from:
 
 OpenWeatherMap API
-https://openweathermap.org/api
 
----
+📈 Future Improvements
+☀ Dynamic weather backgrounds (sun, rain, clouds)
+📍 Detect user location automatically
+📅 5-day weather forecast
+🎨 Better UI design
+👨‍💻 Author
 
-## 👨‍💻 Author
+Vishnu Vardhan Reddy Lekkala
 
-Vishnu Vardhan Reddy
+GitHub:
+https://github.com/vishnu767592
+
+⭐ If you like this project
+
+Give this repository a star ⭐ on GitHub.
