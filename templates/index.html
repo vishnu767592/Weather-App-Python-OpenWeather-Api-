@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Weather App</title>
 
 <style>
 
 body{
-    font-family: Arial;
     text-align:center;
-    padding-top:100px;
+    font-family:Arial;
+    color:white;
+    background-size:cover;
+    height:100vh;
 }
 
 .sunny{
-    background: #FFD54F;
+background-image:url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b");
 }
 
-.rain{
-    background:#64B5F6;
+.cloudy{
+background-image:url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31");
 }
 
-.cloud{
-    background:#B0BEC5;
+.rainy{
+background-image:url("https://images.unsplash.com/photo-1501696461415-6bd6660c6742");
 }
 
-.night{
-    background:#263238;
-    color:white;
-}
-
-.weather-box{
-    background:white;
-    padding:30px;
-    width:300px;
-    margin:auto;
-    border-radius:10px;
+.container{
+background:rgba(0,0,0,0.5);
+padding:30px;
+margin-top:100px;
+display:inline-block;
+border-radius:10px;
 }
 
 </style>
 
 </head>
 
-<body class="{{weather.background if weather}}">
+<body
+{% if weather %}
+class="
+{% if 'rain' in weather.desc %}rainy
+{% elif 'cloud' in weather.desc %}cloudy
+{% else %}sunny
+{% endif %}
+"
+{% endif %}
+>
 
-<h1>🌦 Weather App</h1>
+<div class="container">
+
+<h2>Weather App</h2>
 
 <form method="POST">
-
-<input type="text" name="city" placeholder="Enter City" required>
-
-<button type="submit">Search</button>
-
+<input type="text" name="city" placeholder="Enter city name">
+<button type="submit">Check Weather</button>
 </form>
 
 {% if weather %}
-
-<div class="weather-box">
-
-<h2>{{weather.city}}</h2>
-
-<h1>{{weather.icon}}</h1>
-
-<h3>{{weather.temperature}} °C</h3>
-
-<p>{{weather.description}}</p>
-
-<p>Humidity: {{weather.humidity}}%</p>
+<h3>Weather in {{weather.city}}</h3>
+<p>Temperature: {{weather.temp}} °C</p>
+<p>Humidity: {{weather.humidity}} %</p>
+<p>Condition: {{weather.desc}}</p>
+{% endif %}
 
 </div>
-
-{% endif %}
 
 </body>
 </html>
