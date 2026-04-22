@@ -5,7 +5,7 @@ Users can enter a city name and get real-time weather information such as temper
 
 🚀 Live Demo
 
-🌐 Live Website:
+🌐 Live Website
 https://weather-app-python-openweather-api.onrender.com
 
 Deployed using Render
@@ -15,9 +15,9 @@ Deployed using Render
 🌡 Display temperature
 ☁ Show weather condition
 💧 Show humidity
-⚡ Fast and simple UI
-☁ Uses OpenWeatherMap API
+⚡ Simple and fast UI
 🌐 Deployed online
+🔗 Uses OpenWeatherMap API
 🛠 Technologies Used
 Python
 Flask
@@ -39,7 +39,7 @@ Weather-App-Python-OpenWeather-Api
 ⚙ Installation (Run Locally)
 1️⃣ Clone the repository
 git clone https://github.com/vishnu767592/Weather-App-Python-OpenWeather-Api-.git
-2️⃣ Go to project folder
+2️⃣ Go to the project folder
 cd Weather-App-Python-OpenWeather-Api-
 3️⃣ Install dependencies
 pip install -r requirements.txt
@@ -49,22 +49,20 @@ python app.py
 http://127.0.0.1:5000
 🔑 API Used
 
-Weather data is fetched from:
-
-OpenWeatherMap API
+Weather data is fetched from OpenWeatherMap API.
 
 📈 Future Improvements
 ☀ Dynamic weather backgrounds (sun, rain, clouds)
 📍 Detect user location automatically
 📅 5-day weather forecast
-🎨 Better UI design
+🎨 Improved UI design
 👨‍💻 Author
 
 Vishnu Vardhan Reddy Lekkala
 
-GitHub:
+GitHub Profile
 https://github.com/vishnu767592
 
-⭐ If you like this project
+⭐ Support
 
-Give this repository a star ⭐ on GitHub.
+If you like this project, please give it a star ⭐ on GitHub.
