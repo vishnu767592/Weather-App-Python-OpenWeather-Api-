@@ -1,51 +1,80 @@
 # Weather App 🌦
 
-A simple Python Weather Application that fetches real-time weather data using the OpenWeatherMap API.
+A simple **Python Weather Web Application** that fetches real-time weather data using the **OpenWeatherMap API**.
 
-## Features
-- Get current weather by city name
-- Shows temperature, humidity, wind speed, and weather description
-- Uses OpenWeatherMap API
-- Simple command line interface
+The application allows users to enter a city name and view the current weather information such as temperature, humidity, and weather conditions.
 
-## Technologies Used
-- Python
-- Requests Library
-- OpenWeatherMap API
+---
 
-## Installation
+## 🚀 Features
 
-1. Clone the repository
+* Get current weather by city name
+* Displays temperature, humidity, and weather description
+* Simple web interface built using Flask
+* Uses OpenWeatherMap API
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* Flask
+* Requests Library
+* OpenWeatherMap API
+* HTML / CSS
+
+---
+
+## 📂 Project Structure
+
+Weather-App
+
+app.py
+requirements.txt
+templates/
+    index.html
+README.md
+
+---
+
+## ⚙ Installation
+
+Clone the repository
 
 git clone https://github.com/vishnu767592/Weather-App-Python-OpenWeather-Api.git
 
-2. Navigate to project folder
+Navigate to the project folder
 
-cd weather-app
+cd Weather-App-Python-OpenWeather-Api
 
-3. Install dependencies
+Install dependencies
 
 pip install -r requirements.txt
 
-4. Run the application
+Run the application
 
-python weather.py
+python app.py
 
+---
 
-## Example Output
+## 🌐 Usage
 
-Enter city name: Chennai
+1. Open the browser
+2. Go to
 
------- Weather Report ------
+http://127.0.0.1:5000
 
-City: Chennai  
-Temperature: 31 °C  
-Feels Like: 38 °C  
-Humidity: 76 %  
-Weather: scattered clouds  
-Wind Speed: 4.12 m/s
+3. Enter a city name to see the weather.
 
-## API Used
+---
 
-OpenWeatherMap API  
+## 📡 API Used
+
+OpenWeatherMap API
 https://openweathermap.org/api
+
+---
+
+## 👨‍💻 Author
+
+Vishnu Vardhan Reddy
