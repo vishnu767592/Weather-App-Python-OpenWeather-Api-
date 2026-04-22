@@ -17,7 +17,7 @@ A simple Python Weather Application that fetches real-time weather data using th
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/weather-app.git
+git clone https://github.com/vishnu767592/Weather-App-Python-OpenWeather-Api.git
 
 2. Navigate to project folder
 
