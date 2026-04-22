@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Weather App</title>
+
+<style>
+
+body{
+    text-align:center;
+    font-family:Arial;
+    color:white;
+    background-size:cover;
+    height:100vh;
+}
+
+.sunny{
+background-image:url("https://images.unsplash.com/photo-1501973801540-537f08ccae7b");
+}
+
+.cloudy{
+background-image:url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31");
+}
+
+.rainy{
+background-image:url("https://images.unsplash.com/photo-1501696461415-6bd6660c6742");
+}
+
+.container{
+background:rgba(0,0,0,0.5);
+padding:30px;
+margin-top:100px;
+display:inline-block;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body
+{% if weather %}
+class="
+{% if 'rain' in weather.desc %}rainy
+{% elif 'cloud' in weather.desc %}cloudy
+{% else %}sunny
+{% endif %}
+"
+{% endif %}
+>
+
+<div class="container">
+
+<h2>Weather App</h2>
+
+<form method="POST">
+<input type="text" name="city" placeholder="Enter city name">
+<button type="submit">Check Weather</button>
+</form>
+
+{% if weather %}
+<h3>Weather in {{weather.city}}</h3>
+<p>Temperature: {{weather.temp}} °C</p>
+<p>Humidity: {{weather.humidity}} %</p>
+<p>Condition: {{weather.desc}}</p>
+{% endif %}
+
+</div>
+
+</body>
+</html>
